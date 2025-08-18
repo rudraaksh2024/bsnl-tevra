@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mediumpad" app:cardCornerRadius="16dp" app:cardElevation="4dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_steps" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/step1" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/mediumpad">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="9">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="STEP 1 : OLT CONFIGURATION" android:layout_marginStart="12dp"/>
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="italic" android:textColor="@color/colorblack" android:id="@+id/label1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Configuring the OLT with required VLANs (1199 and 137)" android:layout_marginStart="12dp"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                <ProgressBar android:id="@+id/progress1" android:visibility="visible" android:layout_width="30sp" android:layout_height="30sp" android:indeterminate="true" android:indeterminateTint="@color/colorAccent"/>
+                <ImageView android:visibility="gone" android:layout_width="30sp" android:layout_height="30sp" android:src="@drawable/ic_new_res_fail"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="@dimen/smallpad"/>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.5" android:layout_marginVertical="@dimen/mediumpad">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="9">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="STEP 2 : ACS REPORTING" android:layout_marginStart="12dp"/>
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="italic" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Verifying if the ONT has successfully reported to the Auto Configuration Server (ACS)." android:layout_marginStart="12dp"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                <ProgressBar android:id="@+id/progress2" android:visibility="gone" android:layout_width="30sp" android:layout_height="30sp" android:indeterminate="true" android:indeterminateTint="@color/colorAccent"/>
+                <ImageView android:visibility="gone" android:layout_width="30sp" android:layout_height="30sp" android:src="@drawable/ic_new_res_success"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="@dimen/smallpad"/>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.5" android:layout_marginVertical="@dimen/mediumpad">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="9">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="STEP 3 : ONT AUTO CONFIGURATION" android:layout_marginStart="12dp"/>
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="italic" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pushing configuration settings to the ONT using Bridle Auto COnfiguration Server (ACS)." android:layout_marginStart="12dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                <ProgressBar android:id="@+id/progress3" android:visibility="gone" android:layout_width="30sp" android:layout_height="30sp" android:indeterminate="true" android:indeterminateTint="@color/colorAccent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+package org.openxmlformats.schemas.drawingml.x2006.spreadsheetDrawing.impl;
+
+import java.util.function.Function;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class CTGroupShapeImpl$$ExternalSyntheticLambda20 implements Function {
+    public final /* synthetic */ CTGroupShapeImpl f$0;
+
+    public /* synthetic */ CTGroupShapeImpl$$ExternalSyntheticLambda20(CTGroupShapeImpl cTGroupShapeImpl) {
+        this.f$0 = cTGroupShapeImpl;
+    }
+
+    public final Object apply(Object obj) {
+        return this.f$0.getGraphicFrameArray(((Integer) obj).intValue());
+    }
+}

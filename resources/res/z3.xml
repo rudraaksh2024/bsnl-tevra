@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#ff0066" android:endColor="#ffb3d1" android:angle="90" android:type="linear"/>
+            <stroke android:width="0.1dp" android:color="#b30047"/>
+            <corners android:radius="7.5sp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/dashboard_icon1" android:left="@dimen/xsmallpad" android:top="@dimen/xsmallpad" android:right="@dimen/xsmallpad" android:bottom="@dimen/xsmallpad"/>
+</layer-list>

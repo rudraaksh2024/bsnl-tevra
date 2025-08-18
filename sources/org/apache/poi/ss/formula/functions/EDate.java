@@ -1,0 +1,61 @@
+package org.apache.poi.ss.formula.functions;
+
+import java.util.Calendar;
+import java.util.Date;
+import org.apache.poi.ss.formula.OperationEvaluationContext;
+import org.apache.poi.ss.formula.eval.BlankEval;
+import org.apache.poi.ss.formula.eval.ErrorEval;
+import org.apache.poi.ss.formula.eval.EvaluationException;
+import org.apache.poi.ss.formula.eval.NumberEval;
+import org.apache.poi.ss.formula.eval.RefEval;
+import org.apache.poi.ss.formula.eval.ValueEval;
+import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.util.LocaleUtil;
+
+public class EDate implements FreeRefFunction {
+    public static final FreeRefFunction instance = new EDate();
+
+    public ValueEval evaluate(ValueEval[] valueEvalArr, OperationEvaluationContext operationEvaluationContext) {
+        if (valueEvalArr.length != 2) {
+            return ErrorEval.VALUE_INVALID;
+        }
+        try {
+            double value = getValue(valueEvalArr[0]);
+            int value2 = (int) getValue(valueEvalArr[1]);
+            Date javaDate = DateUtil.getJavaDate(value);
+            if (javaDate == null) {
+                return ErrorEval.VALUE_INVALID;
+            }
+            Calendar localeCalendar = LocaleUtil.getLocaleCalendar();
+            localeCalendar.setTime(javaDate);
+            localeCalendar.add(2, value2);
+            return new NumberEval(DateUtil.getExcelDate(localeCalendar.getTime()));
+        } catch (EvaluationException e) {
+            return e.getErrorEval();
+        }
+    }
+
+    private double getValue(ValueEval valueEval) throws EvaluationException {
+        if (valueEval instanceof NumberEval) {
+            return ((NumberEval) valueEval).getNumberValue();
+        }
+        if (valueEval instanceof BlankEval) {
+            return 0.0d;
+        }
+        if (valueEval instanceof RefEval) {
+            RefEval refEval = (RefEval) valueEval;
+            if (refEval.getNumberOfSheets() <= 1) {
+                ValueEval innerValueEval = refEval.getInnerValueEval(refEval.getFirstSheetIndex());
+                if (innerValueEval instanceof NumberEval) {
+                    return ((NumberEval) innerValueEval).getNumberValue();
+                }
+                if (innerValueEval instanceof BlankEval) {
+                    return 0.0d;
+                }
+            } else {
+                throw new EvaluationException(ErrorEval.VALUE_INVALID);
+            }
+        }
+        throw new EvaluationException(ErrorEval.VALUE_INVALID);
+    }
+}

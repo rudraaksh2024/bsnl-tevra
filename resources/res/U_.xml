@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/olt_ip" android:title="" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_router" android:id="@+id/snmp_6" android:title="6-Hour" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_router" android:id="@+id/snmp_12" android:title="12-Hour" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_logout" android:id="@+id/snmp_18" android:title="18-Hour" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_logout" android:id="@+id/snmp_24" android:title="24-Hour" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,17 @@
+package org.openxmlformats.schemas.drawingml.x2006.chart.impl;
+
+import java.util.function.BiConsumer;
+import org.openxmlformats.schemas.drawingml.x2006.chart.CTChartLines;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class CTBarChartImpl$$ExternalSyntheticLambda11 implements BiConsumer {
+    public final /* synthetic */ CTBarChartImpl f$0;
+
+    public /* synthetic */ CTBarChartImpl$$ExternalSyntheticLambda11(CTBarChartImpl cTBarChartImpl) {
+        this.f$0 = cTBarChartImpl;
+    }
+
+    public final void accept(Object obj, Object obj2) {
+        this.f$0.setSerLinesArray(((Integer) obj).intValue(), (CTChartLines) obj2);
+    }
+}

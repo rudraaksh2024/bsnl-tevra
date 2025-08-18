@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PLEASE ENTER BROADBAND TELEPHONE NUMBER"/>
+        <EditText android:textSize="@dimen/mediumtext" android:textColorHint="@color/Grey" android:id="@+id/et_port_reset" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/smallpad" android:hint="STDCODE-TELEPHONE NUMBER" android:maxLines="1" android:drawableLeft="@drawable/ic_new_phone" android:drawablePadding="@dimen/mediumpad"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_gravity="right" android:id="@+id/btn_get_port_detail" android:background="@drawable/button" android:padding="@dimen/mediumpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/smallpad" android:text="SUBMIT"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lay_port_reset" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad" android:layout_marginBottom="@dimen/smallpad">
+        <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="GENERAL INFORMATION" android:layout_weight="1"/>
+                <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="BB TELE NO" android:layout_weight="3"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_bb_telephone" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="7" android:textIsSelectable="true"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="BB USER-ID" android:layout_weight="3"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_bb_userid" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="7" android:textIsSelectable="true"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="DSLAM PORT" android:layout_weight="3"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_bb_port" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="7" android:textIsSelectable="true"/>
+                    </TableRow>
+                </TableLayout>
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_gravity="right" android:id="@+id/btn_port_reset" android:background="@drawable/button" android:padding="@dimen/mediumpad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigpad" android:layout_marginRight="@dimen/smallpad" android:layout_marginBottom="@dimen/smallpad" android:text="PORT RESET"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

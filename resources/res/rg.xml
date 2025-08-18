@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_alert1" android:background="@drawable/new_style1_2" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UNBILLED USAGE"/>
+    <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_alert2" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mediumpad" android:weightSum="3">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="BA" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_ba" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="BB USER-ID" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_bb_uid" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="TOTAL VOL" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_total_val" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2"/>
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="right" android:layout_gravity="right" android:id="@+id/txt_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigpad" android:layout_marginRight="@dimen/bigpad" android:layout_marginBottom="@dimen/mediumpad" android:text="OK"/>
+</LinearLayout>

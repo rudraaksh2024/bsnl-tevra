@@ -1,0 +1,10 @@
+package org.apache.xmlbeans.impl.schema;
+
+import java.util.function.Supplier;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class StscComplexTypeResolver$$ExternalSyntheticLambda21 implements Supplier {
+    public final Object get() {
+        return StscComplexTypeResolver.$r8$lambda$Rr5wHpoNM5boD4b5K8greFBFLF8();
+    }
+}

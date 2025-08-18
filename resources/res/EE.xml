@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/lay_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/style9" android:padding="5sp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_2" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xsmallpad" android:layout_marginRight="@dimen/xsmallpad" android:layout_marginBottom="@dimen/smallpad" android:text="WAN INTERFACE AND VOIP CONFIGURATION"/>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="CONNECTION NAME" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_connection" android:layout_width="match_parent" android:layout_height="wrap_content" android:editable="false"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="CONNECTION PROTOCOL" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_protocol" android:layout_width="match_parent" android:layout_height="wrap_content" android:editable="false"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lay_pppoe" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="VLAN-ID" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_pppoe_vlan" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="number" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="PPPOE USERNAME" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_pppoe_userid" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="PPPOE PASSWORD" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/colorAccent" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_pppoe_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPassword" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lay_voip" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="VOIP VLAN" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_voip_vlan" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="number" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="TELEPHONE (1722921115)" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_voip_tele" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="number" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="PPPOE PASSWORD" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/colorAccent" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_voip_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPassword" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="VOIP DOMAIN (Ex pb.ftth.ims.bsnl.in)" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_voip_domain" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lay_bridge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="BRIDGED VLAN" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_bridge_vlan" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="number" android:imeOptions="actionNext"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigpad" android:layout_marginBottom="@dimen/bigpad" android:weightSum="2" android:layoutDirection="rtl">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_delete" android:background="@drawable/button_red" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/mediumpad" android:text="DELETE SERVICE" android:layout_weight="1"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_add" android:background="@drawable/button_layout" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/mediumpad" android:text="ADD SERVICE" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

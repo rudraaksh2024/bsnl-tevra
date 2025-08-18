@@ -1,0 +1,12 @@
+package org.apache.poi.xslf.usermodel;
+
+import org.apache.poi.ooxml.POIXMLDocumentPart;
+import org.apache.poi.ooxml.POIXMLRelation;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class XSLFRelation$$ExternalSyntheticLambda21 implements POIXMLRelation.NoArgConstructor {
+    public final POIXMLDocumentPart init() {
+        return new XSSFWorkbook();
+    }
+}

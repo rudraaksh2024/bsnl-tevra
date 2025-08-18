@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/new_style" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="3">
+        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_interface" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UPLINK INTERFACE : GE0/1"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorskyblue" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="In-Traffic (Kbps)" android:drawableLeft="@drawable/circle_blue"/>
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Out-Traffic (Kbps)" android:drawableLeft="@drawable/circle_red"/>
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/mychart" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="Sr" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="Interface" android:layout_weight="2"/>
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="In-Traffic" android:layout_weight="2"/>
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="Out-Traffic" android:layout_weight="2"/>
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="TimeStamp" android:layout_weight="3"/>
+        </TableRow>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lay_traffic" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

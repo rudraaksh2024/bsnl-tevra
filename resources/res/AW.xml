@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MANAGE-USER"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bigpad" android:src="@drawable/ic_action_home" android:contentDescription="TODO"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mediumpad" android:weightSum="3">
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:layout_gravity="center" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="CIRCLE" android:layout_weight="1"/>
+                <Spinner android:id="@+id/sp_circle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:layout_gravity="center" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="OA" android:layout_weight="1"/>
+                <Spinner android:id="@+id/sp_ssa" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_gravity="right" android:id="@+id/btn_user_populate" android:background="@drawable/button" android:padding="@dimen/mediumpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bigpad" android:layout_marginTop="@dimen/smallpad" android:layout_marginRight="@dimen/bigpad" android:layout_marginBottom="@dimen/smallpad" android:text="SUBMIT"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lay_user_display" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad">
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_manageuser" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/smallpad"/>
+            <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_search_keyword" android:background="@drawable/new_style_search" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mediumpad" android:layout_marginRight="@dimen/mediumpad" android:hint="SEARCH KEYWORD" android:maxLines="1" android:drawableLeft="@drawable/ic_new_search"/>
+            <ScrollView android:scrollbarStyle="outsideInset" android:id="@+id/layout" android:scrollbars="none|horizontal|vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad" android:fillViewport="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TableLayout android:layout_gravity="center" android:id="@+id/tbl_user_header" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                    <HorizontalScrollView android:scrollbarStyle="outsideInset" android:id="@+id/horizontalView" android:scrollbars="none|horizontal|vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/lay_user" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TableLayout android:layout_gravity="center" android:id="@+id/tbl_user" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

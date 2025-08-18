@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/lay_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lay_status" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/style9" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_2" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WAN INTERFACE INFORMATION"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lay_wan" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/lay_voip" android:background="@drawable/style9" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VOIP INFORMATION"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="left|center_vertical|center_horizontal|center" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="PHONE NUMBER" android:layout_weight="2"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_voip_phn" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="left|center_vertical|center_horizontal|center" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="STATUS" android:layout_weight="2"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_voip_status" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

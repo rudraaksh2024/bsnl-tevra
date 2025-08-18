@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lay_splash" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/img_splash" android:layout_width="225dp" android:layout_height="225dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="TODO" app:srcCompat="@drawable/bsnl_splash1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="normal|bold|italic" android:textColor="#823709" android:gravity="center" android:id="@+id/txt_splash" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(An Initiative Towards Better Customer Satisfaction)" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/progressbar_splash" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="@dimen/bigpad" android:indeterminateDrawable="@drawable/progressbar"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

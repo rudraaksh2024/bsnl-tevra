@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="USER-PRIVILEGE"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bigpad" android:src="@drawable/ic_action_home" android:contentDescription="TODO"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lay_manage_privilege" android:padding="@dimen/smallpad" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="USER GENERAL INFORMATION" android:layout_weight="1"/>
+                    <TableLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:paddingLeft="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:text="NAME" android:layout_weight="3"/>
+                            <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_name" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:textIsSelectable="true"/>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:paddingLeft="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:text="MOBILE" android:layout_weight="3"/>
+                            <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_mobile" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:textIsSelectable="true"/>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:paddingLeft="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:text="EMAIL" android:layout_weight="3"/>
+                            <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_email" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:textIsSelectable="true"/>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:paddingLeft="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:text="DESIGNATION" android:layout_weight="3"/>
+                            <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_designation" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:textIsSelectable="true"/>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:paddingLeft="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:text="WORKING UNIT" android:layout_weight="3"/>
+                            <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_unit" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:textIsSelectable="true"/>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="ROLE"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_role" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="ACCESS LEVEL"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_access_level" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="ACCOUNT STATUS"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_account_status" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="BROADBAND DETAIL PRIVILEGE" android:layout_weight="1"/>
+                    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="BROADBAND"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_bbdetail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="BHARAT FIBER"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_ftthdetail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="TIP FTTH"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_tipdetail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="NETWORK MONITORING PRIVILEGE" android:layout_weight="1"/>
+                    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="DSLAM NMS"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_nms_dslam" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="OLT NMS"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_nms_olt" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="TIP-OLT NMS"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_nms_tpartyolt" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="ADD-ON PRIVILEGES" android:layout_weight="1"/>
+                    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="PORT VERIFY"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_portverify" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="8">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="PMS"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_pms" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="8">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="N/W GLANCE"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_network_glance" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:background="@drawable/new_style2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="REPORT"/>
+                            </LinearLayout>
+                            <LinearLayout android:background="@drawable/style17" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="5">
+                                <Spinner android:gravity="center_vertical" android:id="@+id/spinner_report" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bigpad" android:layout_marginRight="@dimen/bigpad">
+                    <Button android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_gravity="center" android:id="@+id/btn_update" android:background="@drawable/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UPDATE"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

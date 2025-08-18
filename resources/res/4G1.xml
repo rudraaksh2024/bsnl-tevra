@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/style9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mediumpad">
+    <RelativeLayout android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="top|right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_srno" android:background="@drawable/ic_new_circle_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/txt_user1" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="USERNAME"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_user2" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/txt_vlan1" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VLAN AND SERVICE"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_vlan2" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/txt_ip1" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="IPV4 AND IPV6"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_ip2" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/txt_ipstack1" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="IP STACKING"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_ipstack2" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/txt_status1" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="STATUS"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_status2" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

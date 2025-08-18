@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/style9" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="top|right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_srno" android:background="@drawable/ic_new_circle_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:id="@+id/txt_ssid_name" android:paddingLeft="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SSID"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/txt_ssid_status1" android:paddingLeft="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="wrap_content" android:text="STATUS" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/txt_ssid_asso1" android:paddingLeft="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="wrap_content" android:text="ACTIVE ASSOCIATON" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:id="@+id/txt_ssid_status2" android:paddingLeft="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:id="@+id/txt_ssid_asso2" android:paddingLeft="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

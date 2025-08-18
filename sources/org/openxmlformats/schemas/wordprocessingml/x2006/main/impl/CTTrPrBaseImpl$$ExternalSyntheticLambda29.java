@@ -1,0 +1,17 @@
+package org.openxmlformats.schemas.wordprocessingml.x2006.main.impl;
+
+import java.util.function.BiConsumer;
+import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHeight;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class CTTrPrBaseImpl$$ExternalSyntheticLambda29 implements BiConsumer {
+    public final /* synthetic */ CTTrPrBaseImpl f$0;
+
+    public /* synthetic */ CTTrPrBaseImpl$$ExternalSyntheticLambda29(CTTrPrBaseImpl cTTrPrBaseImpl) {
+        this.f$0 = cTTrPrBaseImpl;
+    }
+
+    public final void accept(Object obj, Object obj2) {
+        this.f$0.setTrHeightArray(((Integer) obj).intValue(), (CTHeight) obj2);
+    }
+}

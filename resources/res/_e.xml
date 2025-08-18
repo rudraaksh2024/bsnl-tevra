@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/new_style" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_header" android:background="@drawable/new_style1_1" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CIRCLE : PUNJAB | SSA : CHANDIGARH"/>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TIP OLT LOGIN CREDENTIAL UPDATION INDEX"/>
+        <com.github.mikephil.charting.charts.PieChart android:id="@+id/piechart" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_info" android:background="@drawable/new_style1_2" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OLT-IP : 10.215.58.58 | OLT-VLAN : 3758"/>
+    <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PLEASE TURN YOUR DEVICE DATA AND GPS"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:text="Latitude" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:text="Longitude" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_lat" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_long" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="left|center_vertical|center_horizontal|center" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:text="Geo Address :" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_address" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigpad" android:weightSum="2">
+        <TextView android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/txt_cancel" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="CANCEL" android:layout_weight="1"/>
+        <TextView android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="center" android:id="@+id/txt_update" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="UPDATE" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

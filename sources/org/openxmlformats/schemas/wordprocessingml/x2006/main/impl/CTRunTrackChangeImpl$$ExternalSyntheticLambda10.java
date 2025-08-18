@@ -1,0 +1,16 @@
+package org.openxmlformats.schemas.wordprocessingml.x2006.main.impl;
+
+import java.util.function.Supplier;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class CTRunTrackChangeImpl$$ExternalSyntheticLambda10 implements Supplier {
+    public final /* synthetic */ CTRunTrackChangeImpl f$0;
+
+    public /* synthetic */ CTRunTrackChangeImpl$$ExternalSyntheticLambda10(CTRunTrackChangeImpl cTRunTrackChangeImpl) {
+        this.f$0 = cTRunTrackChangeImpl;
+    }
+
+    public final Object get() {
+        return Integer.valueOf(this.f$0.sizeOfBorderBoxArray());
+    }
+}

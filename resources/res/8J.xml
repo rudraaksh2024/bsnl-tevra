@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/new_style" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="rtl">
+        <ImageView android:id="@+id/img_download" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/smallpad" android:src="@drawable/ic_new_download"/>
+        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_header" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CIRCLE : PUNJAB | SSA : CHANDIGARH"/>
+    </LinearLayout>
+    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_search" android:background="@drawable/new_style_search" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/smallpad" android:hint="SEARCH KEYWORD" android:maxLines="1" android:drawableLeft="@drawable/ic_new_search"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/smallpad" android:layout_marginRight="@dimen/smallpad" android:layout_marginBottom="@dimen/smallpad">
+        <bsnl.bsnl_teevra.HorizontalScrollViewForViewPager android:layout_width="wrap_content" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lay_result" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableLayout android:id="@+id/tbl_detail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </bsnl.bsnl_teevra.HorizontalScrollViewForViewPager>
+    </ScrollView>
+</LinearLayout>

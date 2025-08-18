@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/new_style1_2" android:paddingTop="@dimen/smallpad" android:paddingBottom="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_phn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PHONE NO"/>
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_docket" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(DOCKET NO : 121139138913)"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mediumpad" android:text="Please Select The Team Member To Assign Fault"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigpad" android:layout_marginBottom="@dimen/bigpad">
+        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="TEAM MEMBER" android:layout_weight="1"/>
+        <Spinner android:id="@+id/sp_fault_assign" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigpad" android:weightSum="2">
+        <TextView android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/txt_cancel" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="CANCEL" android:layout_weight="1"/>
+        <TextView android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="center" android:id="@+id/txt_assign" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="ASSIGN" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

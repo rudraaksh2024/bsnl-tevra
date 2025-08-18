@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PMS"/>
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_gravity="bottom" android:id="@+id/txt_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  (UPLINK-TRAFFIC)"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/lay_pms_tip_uplink" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,26 @@
+package org.openxmlformats.schemas.presentationml.x2006.main;
+
+import org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder;
+import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.XmlObject;
+import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import org.openxmlformats.schemas.officeDocument.x2006.relationships.STRelationshipId;
+
+public interface CTTagsData extends XmlObject {
+    public static final DocumentFactory<CTTagsData> Factory;
+    public static final SchemaType type;
+
+    String getId();
+
+    void setId(String str);
+
+    STRelationshipId xgetId();
+
+    void xsetId(STRelationshipId sTRelationshipId);
+
+    static {
+        DocumentFactory<CTTagsData> documentFactory = new DocumentFactory<>(TypeSystemHolder.typeSystem, "cttagsdatac662type");
+        Factory = documentFactory;
+        type = documentFactory.getType();
+    }
+}

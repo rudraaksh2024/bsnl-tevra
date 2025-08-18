@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lay_dashboard" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_menu" android:padding="@dimen/smallpad" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_new_menu"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/mediumpad" android:paddingRight="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3">
+                <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:paddingBottom="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MY DASHBOARD"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:id="@+id/txt_header_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WELCOME, MANSOOR RAJA"/>
+                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:id="@+id/txt_header_hrms" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="201003282"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/img_dp" android:background="@drawable/profile_circle" android:padding="1sp" android:layout_width="70sp" android:layout_height="70sp" android:src="@drawable/ic_new_profile_purple"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lay1" android:layout_width="match_parent" android:layout_height="100sp" android:weightSum="2">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view1" android:background="@drawable/new_card1" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_bbdetail" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BROADBAND DETAIL"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(Complete Broadband Details)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view2" android:background="@drawable/new_card2" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_fms1" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FMS"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(Franchisee Management System)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lay2" android:layout_width="match_parent" android:layout_height="100sp" android:weightSum="2">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view3" android:background="@drawable/new_card3" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_nms" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NMS"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(Ping Your N/W elements)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view5" android:background="@drawable/new_card7" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_nw_glance" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NETWORK GLANCE"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(N/W Element At A Glance)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lay3" android:layout_width="match_parent" android:layout_height="100sp" android:weightSum="2">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view6" android:background="@drawable/new_card6" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_pms" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PMS"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(Performance Monitoring System)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view4" android:background="@drawable/new_card8" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_wizard" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WIZARDS"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(Explore The Wizards Of Teevra)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lay4" android:layout_width="match_parent" android:layout_height="100sp" android:weightSum="2">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view7" android:background="@drawable/new_card5" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_report" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="REPORTS"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(Fetch Reports Here)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/card_view8" android:background="@drawable/new_card4" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:weightSum="6" android:layout_weight="1">
+                            <ImageView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="0sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/ic_new_setting" android:layout_weight="4"/>
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0sp" android:layout_weight="2">
+                                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ADMIN"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(Restricted To Nodal-Officer)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lay_account_status" android:background="@drawable/new_style_transparent" android:padding="@dimen/bigpad" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorAccentdark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="YOUR ACCOUNT IS PENDING FOR APPROVAL\10PLEASE CONTACT UR NODAL-OFFICER "/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/xsmallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="10">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/new_style10" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_srno" android:background="@drawable/ic_new_circle_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_firm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AKHILESHWAR TRADING CO0."/>
+            <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(DAPPER, CHD)"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad" android:layout_weight="3">
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT IP" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="INTERFACE" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="SENSOR" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_ip" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_interface" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_sensor" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad" android:layout_weight="3">
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="RAISED AT" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="CLEARED AT" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="STATUS" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_alarm_raised_at" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_alarm_cleared_at" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_alarm_status" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="top|center_vertical|center_horizontal|center" android:padding="@dimen/smallpad" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="ALARM DESCRIPTION :"/>
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorRed" android:id="@+id/txt_alarm_desc" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

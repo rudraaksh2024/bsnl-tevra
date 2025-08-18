@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:background="@color/colorAccent" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MANAGE-PASSWORD"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bigpad" android:src="@drawable/ic_action_home" android:contentDescription="TODO"/>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/style9" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PLEASE ENTER CURRENT AND NEW PASSWORD"/>
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/colorAccent">
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_current_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="CURRENT PASSWORD" android:maxLines="1" android:drawablePadding="@dimen/mediumpad" android:inputType="textPassword" android:imeOptions="actionNext" android:drawableStart="@drawable/ic_new_password"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/colorAccent">
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_new_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="NEW PASSWORD" android:maxLines="1" android:drawablePadding="@dimen/mediumpad" android:inputType="textPassword" android:imeOptions="actionNext" android:drawableStart="@drawable/ic_new_password"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <Button android:textSize="@dimen/mediumtext" android:id="@+id/btn_change" android:background="@drawable/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bigpad" android:layout_marginTop="@dimen/mediumpad" android:layout_marginRight="@dimen/bigpad" android:layout_marginBottom="@dimen/mediumpad" android:text="submit"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/progressbar_managepassword" android:background="@drawable/style11" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_width="50dp" android:layout_height="50dp" android:indeterminateDrawable="@drawable/progressbar"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

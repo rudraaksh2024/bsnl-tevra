@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/img_profile" android:background="@drawable/new_style_circle" android:layout_width="175sp" android:layout_height="175sp" android:src="@drawable/ic_new_profile_purple" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/img_edit_dp" android:background="@drawable/new_style_circle3" android:padding="1sp" android:layout_width="30sp" android:layout_height="30sp" android:src="@drawable/ic_new_camera" android:layout_toRightOf="@+id/img_profile" android:layout_alignBottom="@+id/img_profile"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/style9" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/smallpad" android:layout_marginTop="@dimen/smallpad" android:layout_marginRight="@dimen/smallpad" android:layout_marginBottom="@dimen/mediumpad">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NAME"/>
+            <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DESIGNATION / UNIT"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_deg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOBILE"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_mobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="USER TYPE"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ACCESS LEVEL"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_access" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TEEVRA USERNAME"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FMS USERNAME"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_fmsusername" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CIRCLE"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_circle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SSA"/>
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/txt_ssa" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MANSOOR RAZA"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

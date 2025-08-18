@@ -1,0 +1,18 @@
+package org.apache.xmlbeans.impl.store;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class Cursor$$ExternalSyntheticLambda47 implements Runnable {
+    public final /* synthetic */ Cursor f$0;
+    public final /* synthetic */ String f$1;
+    public final /* synthetic */ String f$2;
+
+    public /* synthetic */ Cursor$$ExternalSyntheticLambda47(Cursor cursor, String str, String str2) {
+        this.f$0 = cursor;
+        this.f$1 = str;
+        this.f$2 = str2;
+    }
+
+    public final void run() {
+        this.f$0.m2353lambda$insertElement$56$orgapachexmlbeansimplstoreCursor(this.f$1, this.f$2);
+    }
+}

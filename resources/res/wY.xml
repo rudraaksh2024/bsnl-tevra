@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/lay_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/style9" android:padding="5sp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_2" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xsmallpad" android:layout_marginRight="@dimen/xsmallpad" android:layout_marginBottom="@dimen/smallpad" android:text="WIFI SSID AND PASSWORD CONFIGURATION"/>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/lay_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="SELECT ACTION" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:editable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/lay_band" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="WIFI SSID" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_wifissid" android:layout_width="match_parent" android:layout_height="wrap_content" android:editable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/lay_ssid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="WIFI BAND" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <EditText android:enabled="false" android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_wifiband" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:editable="false" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/lay_ssid_new" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="NEW WIFI SSID" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_wifissid_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/lay_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xsmallpad" android:hint="PASSWORD" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/colorAccent" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/et_wifipwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPassword" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigpad" android:layout_marginBottom="@dimen/bigpad" android:weightSum="2" android:layoutDirection="rtl">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/btn_submit" android:background="@drawable/button_layout" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/mediumpad" android:text="UPDATE" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="normal|bold|italic" android:textColor="@color/colorRed" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="** Once You Change The WIFI SSID Or Password, You Will Lose The WIFI Connectivity. In That Case Simply Reconnect The Wifi"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

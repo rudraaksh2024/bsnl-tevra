@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="100sp" android:layout_marginBottom="@dimen/bigpad" android:src="@drawable/ic_new_error"/>
+    <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_alert" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mediumpad" android:text="ERROR"/>
+    <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_error" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The OLT is not Mapped to BBC" android:lineSpacingExtra="@dimen/smallpad"/>
+</LinearLayout>

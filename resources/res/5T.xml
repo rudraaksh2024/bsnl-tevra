@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SITE INSPECTION"/>
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_gravity="bottom" android:id="@+id/txt_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  (Dec 2022)"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/smallpad">
+                <RelativeLayout android:id="@+id/lay_site_main" android:background="@drawable/new_style_white" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="200sp" android:layout_marginBottom="@dimen/smallpad">
+                    <RelativeLayout android:id="@+id/lay_site" android:background="@drawable/new_style_white" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/img_site" android:tag="plain" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_new_site"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/lay_caption" android:background="@drawable/new_style5" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="8dp" android:textStyle="bold" android:textColor="@color/colorblack" android:id="@+id/txt_geocordinates" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="(SECTOR 20 CHD)"/>
+                                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                    <TextView android:textSize="8dp" android:textStyle="bold" android:textColor="@color/colorblack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" TIME : "/>
+                                    <TextView android:textSize="8dp" android:textStyle="bold" android:textColor="@color/colorblack" android:id="@+id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(SECTOR 20 CHD)"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/img_capture" android:background="@drawable/new_style_circle3" android:layout_width="40sp" android:layout_height="40sp" android:layout_marginTop="@dimen/smallpad" android:layout_marginRight="@dimen/smallpad" android:src="@drawable/ic_new_camera" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="OLT PHYSICAL PARAMETER" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT-IP" android:layout_weight="1"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_olt_ip" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="10.215.58.58" android:layout_weight="2"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT-MAKE" android:layout_weight="1"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <Spinner android:gravity="center_vertical" android:id="@+id/sp_olt_make" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT-PORT" android:layout_weight="1"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <Spinner android:gravity="center_vertical" android:id="@+id/sp_olt_port" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT-TYPE" android:layout_weight="1"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <Spinner android:gravity="center_vertical" android:id="@+id/sp_olt_type" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT-CAPACITY" android:layout_weight="1"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_olt_capacity" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:hint="Olt Equipped Capacity" android:maxLines="1" android:digits="0123456789." android:layout_weight="2" android:inputType="number"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT-UPLINK" android:layout_weight="1"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <Spinner android:gravity="center_vertical" android:id="@+id/sp_olt_uplink" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT-BACKHAUL" android:layout_weight="1"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <Spinner android:gravity="center_vertical" android:id="@+id/sp_olt_backhaul" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="POWER LEVEL" android:layout_weight="1"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_olt_powerlevel" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:hint="Olt Uplink Port Optical Power (Dbm)" android:maxLines="1" android:digits="0123456789.-" android:layout_weight="2" android:inputType="number"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="OLT ENVIROMENTAL PARAMETER" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="HUMIDITY" android:layout_weight="1"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_olt_humidity" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:hint="Humidity Of Olt Room (%)" android:maxLines="1" android:digits="0123456789." android:layout_weight="2" android:inputType="number"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="TEMPERATURE" android:layout_weight="1"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_olt_temperature" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:hint="Temp. Of Olt Room (°C)" android:maxLines="1" android:digits="0123456789." android:layout_weight="2" android:inputType="number"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="AC UNIT" android:layout_weight="1"/>
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/radio_ac" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_ac_avlb" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_ac_na" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Not Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="POWER BACKUP" android:layout_weight="1"/>
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/radio_power" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_power_avlb" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_power_na" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Not Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="CLEANLINESS" android:layout_weight="1"/>
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/radio_clean" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_clean_avlb" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_clean_na" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="INSTALLED AT" android:layout_weight="1"/>
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/radio_install" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_install_bsnl" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="BSNL Exg " android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_install_bts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BTS" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_install_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TIP Premises" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:text="OLT OPERATIONAL PARAMETER" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OLT BACKUP" android:layout_weight="1"/>
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/radio_olt_backup" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:weightSum="3" android:layout_weight="2">
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_olt_backup_avl" android:layout_width="0sp" android:layout_height="match_parent" android:text="Periodic" android:layout_weight="1" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_olt_backup_never" android:layout_width="0sp" android:layout_height="wrap_content" android:text="Never" android:layout_weight="1" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="PON ROUTE MAP" android:layout_weight="1"/>
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/radio_pon_map" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_pon_map_avl" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_pon_map_na" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not Available" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="MARKETING" android:layout_weight="1"/>
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/radio_marketing" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:weightSum="3" android:layout_weight="2">
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_marketing_daily" android:layout_width="0sp" android:layout_height="match_parent" android:text="Daily" android:layout_weight="0.9" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_marketing_weekly" android:layout_width="0sp" android:layout_height="wrap_content" android:text="Weekly" android:layout_weight="1" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <RadioButton android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:id="@+id/radio_marketing_biweekly" android:layout_width="0sp" android:layout_height="wrap_content" android:text="Biweekly" android:layout_weight="1.1" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="CUSTOMER COUNT" android:layout_weight="1"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_customerbase" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:hint="Customer Count As On Date" android:maxLines="1" android:digits="0123456789." android:layout_weight="2" android:inputType="number"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="100sp">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OBSERVATION" android:layout_weight="1"/>
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="100sp" android:layout_weight="2">
+                            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:gravity="right" android:id="@+id/txt_comment_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0/100"/>
+                            <EditText android:textSize="@dimen/mediumtext" android:gravity="top" android:id="@+id/et_comment" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="Any Other Observations/Issues"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="INSPECTED BY" android:layout_weight="1"/>
+                        <LinearLayout android:orientation="horizontal" android:background="@drawable/style17" android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                            <CheckBox android:textSize="@dimen/mediumtext" android:id="@+id/chk_bbc" android:layout_width="0sp" android:layout_height="match_parent" android:text="BBC" android:layout_weight="1" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <CheckBox android:textSize="@dimen/mediumtext" android:id="@+id/chk_oahead" android:layout_width="0sp" android:layout_height="match_parent" android:text="OA HEAD" android:layout_weight="1.3" android:scaleX="0.8" android:scaleY="0.8"/>
+                            <CheckBox android:textSize="@dimen/mediumtext" android:id="@+id/chk_bahead" android:layout_width="0sp" android:layout_height="match_parent" android:text="BA HEAD" android:layout_weight="1.3" android:scaleX="0.8" android:scaleY="0.8"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/smallpad">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="2">
+                        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inspBy" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/smallpad"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/smallpad">
+                            <TextView android:textSize="@dimen/xsmalltext" android:textStyle="normal|bold|italic" android:textColor="@color/colorRed" android:gravity="center" android:paddingRight="@dimen/smallpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="* OLT LAT :"/>
+                            <TextView android:textSize="@dimen/xsmalltext" android:textStyle="normal|bold|italic" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/txt_lat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+                            <TextView android:textSize="@dimen/xsmalltext" android:textStyle="normal|bold|italic" android:textColor="@color/colorRed" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="** OLT LONG :" android:paddingHorizontal="@dimen/smallpad"/>
+                            <TextView android:textSize="@dimen/xsmalltext" android:textStyle="normal|bold|italic" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/txt_long" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/btn_update" android:background="@drawable/button" android:padding="@dimen/mediumpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/smallpad" android:text="UPDATE"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

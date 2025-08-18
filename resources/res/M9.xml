@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center" android:paddingTop="@dimen/mediumpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BSNL TEEVRA"/>
+    <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center" android:id="@+id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version 2.0.0"/>
+    <ImageView android:layout_gravity="center" android:layout_width="200sp" android:layout_height="200sp" android:layout_margin="@dimen/smallpad" android:src="@drawable/scan_me" android:contentDescription="TODO"/>
+    <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center" android:padding="@dimen/smallpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad" android:layout_marginBottom="@dimen/smallpad" android:text="2016 © Bharat Sanchar Nigam Limited. ALL Rights Reserved."/>
+</LinearLayout>

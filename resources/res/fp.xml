@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mediumpad" app:cardCornerRadius="16dp" app:cardElevation="4dp">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/bigpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/bigtext" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/title" android:padding="@dimen/mediumpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/bigpad" android:paddingHorizontal="@dimen/bigpad">
+            <NumberPicker android:id="@+id/month_picker" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <View android:layout_width="0sp" android:layout_height="1sp" android:layout_weight="0.5"/>
+            <NumberPicker android:id="@+id/year_picker" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mediumpad" android:weightSum="2" android:paddingHorizontal="@dimen/mediumpad">
+            <TextView android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="left" android:id="@+id/txt_cancel" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="CANCEL" android:layout_weight="1" android:layout_marginHorizontal="@dimen/mediumpad"/>
+            <TextView android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="right" android:id="@+id/txt_set" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OK" android:layout_weight="1" android:layout_marginHorizontal="@dimen/mediumpad"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

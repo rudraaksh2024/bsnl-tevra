@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PMS"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <RelativeLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:padding="@dimen/mediumpad" android:layout_width="?attr/actionBarSize" android:layout_height="?attr/actionBarSize" android:layout_marginLeft="@dimen/smallpad" android:layout_marginRight="@dimen/smallpad">
+                <RelativeLayout android:id="@+id/lay_alarm" android:background="@drawable/ic_new_notification" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/xsmallpad">
+                    <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/txt_alarm" android:background="@drawable/new_style_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bigpad" android:src="@drawable/ic_action_home" android:contentDescription="TODO"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lay_pms_brief1" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mediumpad" android:weightSum="3">
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:layout_gravity="center" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="CIRCLE" android:layout_weight="1"/>
+                <Spinner android:id="@+id/sp_circle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:layout_gravity="center" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="OA" android:layout_weight="1"/>
+                <Spinner android:id="@+id/sp_ssa" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_gravity="right" android:id="@+id/btn_submit" android:background="@drawable/button" android:padding="@dimen/mediumpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bigpad" android:layout_marginTop="@dimen/smallpad" android:layout_marginRight="@dimen/bigpad" android:layout_marginBottom="@dimen/smallpad" android:text="SUBMIT"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lay_pms_brief2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:scrollbarStyle="outsideInset" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:id="@+id/lay_pms" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallpad" android:layout_marginBottom="@dimen/smallpad">
+                    <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_header" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lay1" android:layout_width="match_parent" android:layout_height="100sp" android:weightSum="2">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/lay_pms_tip" android:background="@drawable/cv2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xsmallpad" android:layout_marginBottom="@dimen/xsmallpad">
+                                <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_pms_tip_enabled" android:layout_width="0sp" android:layout_height="wrap_content" android:text="--" android:layout_weight="1"/>
+                                <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_pms_tip_disabled" android:layout_width="0sp" android:layout_height="wrap_content" android:text="--" android:layout_weight="1"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="PMS ENABLED" android:layout_weight="1"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="PMS DISABLED" android:layout_weight="1"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="bottom" android:id="@+id/txt_pms_tip" android:paddingLeft="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="TIP-OLT" android:layout_weight="1"/>
+                                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                                    <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_pms_tip_total" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="999"/>
+                                    <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TOTAL"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/lay_pms_baf" android:background="@drawable/cv5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/xsmallpad" android:paddingBottom="@dimen/xsmallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_pms_baf_enabled" android:layout_width="0sp" android:layout_height="wrap_content" android:text="--" android:layout_weight="1"/>
+                                <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_pms_baf_disabled" android:layout_width="0sp" android:layout_height="wrap_content" android:text="--" android:layout_weight="1"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="PMS ENABLED" android:layout_weight="1"/>
+                                <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="0sp" android:layout_height="match_parent" android:text="PMS DISABLED" android:layout_weight="1"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="bottom" android:id="@+id/txt_pms_baf" android:paddingLeft="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="TIP-BAF" android:layout_weight="1"/>
+                                <LinearLayout android:gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                                    <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_pms_baf_total" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="999"/>
+                                    <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TOTAL"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_action_home_blue" android:id="@+id/home" android:title="HOME"/>
+        <item android:icon="@drawable/ic_action_description" android:id="@+id/bbdetail" android:title="BROADBAND DETAILS"/>
+        <item android:icon="@drawable/ic_action_fms" android:id="@+id/fms" android:title="FMS"/>
+        <item android:icon="@drawable/ic_action_nms" android:id="@+id/nms" android:title="NMS"/>
+        <item android:icon="@drawable/ic_action_verify" android:id="@+id/port_verify" android:title="PORT-VERIFY"/>
+        <item android:icon="@drawable/ic_action_health" android:id="@+id/health" android:title="N/W ELEMENT HEALTH"/>
+        <item android:icon="@drawable/ic_action_search" android:id="@+id/log" android:title="SEARCH LOG"/>
+        <item android:icon="@drawable/ic_action_report" android:id="@+id/report" android:title="REPORTS"/>
+        <item android:icon="@drawable/ic_action_setting" android:id="@+id/setting" android:title="SETTINGS"/>
+    </group>
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_action_feedback" android:id="@+id/feedback" android:title="FEEDBACK"/>
+        <item android:icon="@drawable/ic_action_manage_password" android:id="@+id/manage_password" android:title="MANAGE PASSWORD"/>
+        <item android:icon="@drawable/ic_action_logout" android:id="@+id/logout" android:title="LOGOUT"/>
+    </group>
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_action_info" android:id="@+id/about" android:title="ABOUT"/>
+    </group>
+</menu>

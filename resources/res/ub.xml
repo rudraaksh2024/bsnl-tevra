@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EDIT-INVENTORY"/>
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_gravity="bottom" android:id="@+id/txt_header" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bigpad" android:src="@drawable/ic_action_home" android:contentDescription="TODO"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:scrollbarStyle="outsideInset" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TableRow android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_gravity="center" android:background="@drawable/new_style1_1" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PLEASE ENTER CORRECT INVENTORY DETAILS" android:layout_weight="1"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="VENDOR" android:layout_weight="3"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_vendor" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="4"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="N/W ELEMENT" android:layout_weight="3"/>
+                        <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_element" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="4"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="CIRCLE" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_circle" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="SSA" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_ssa" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="EXGCODE" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_exgcode" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:maxLength="6" android:layout_weight="4" android:inputType="text"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="LOCATION" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_inventory_location" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:maxLength="20" android:layout_weight="4" android:inputType="text"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_ip" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_ip_detail" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:digits="0123456789." android:layout_weight="4" android:inputType="number"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_make" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4">
+                            <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <Spinner android:id="@+id/sp_inventory_make_detail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </LinearLayout>
+                            <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_new_inventory_make" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/txt_inventory_outer_vlan" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_inventory_outervlan" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="4" android:inputType="number"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="START-INNERVLAN" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_inventory_s_innervlan" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="4" android:inputType="number"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="LAST-INNERVLAN" android:layout_weight="3"/>
+                        <EditText android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:id="@+id/et_inventory_l_innervlan" android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="4" android:inputType="number"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="OPERATION STATUS" android:layout_weight="3"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4">
+                            <Spinner android:id="@+id/sp_manageable" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="4"/>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="NAS-IP" android:layout_weight="3"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4">
+                            <Spinner android:id="@+id/sp_inventory_nasip" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="4"/>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="BNG-IP" android:layout_weight="3"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4">
+                            <Spinner android:id="@+id/sp_inventory_bngip" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="4"/>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center_vertical" android:background="@drawable/new_style2" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="BNG-NAME" android:layout_weight="3"/>
+                        <LinearLayout android:background="@drawable/style17" android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="4">
+                            <Spinner android:id="@+id/sp_inventory_bngname" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="4"/>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+                <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_gravity="right" android:id="@+id/btn_inventory_submit" android:background="@drawable/button" android:padding="@dimen/mediumpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/mediumpad" android:text="SUBMIT"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

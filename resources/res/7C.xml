@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad">
+        <RelativeLayout android:id="@+id/lay_site_main" android:layout_width="match_parent" android:layout_height="200sp" android:layout_marginBottom="@dimen/smallpad">
+            <RelativeLayout android:id="@+id/lay_site" android:background="@drawable/new_style_white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/img_site" android:tag="plain" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_new_site"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lay_caption" android:background="@drawable/new_style5" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/xsmalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:id="@+id/txt_caption" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="(SECTOR 20 CHD)"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/img_capture" android:background="@drawable/new_style_circle3" android:layout_width="40sp" android:layout_height="40sp" android:layout_marginTop="@dimen/smallpad" android:layout_marginRight="@dimen/smallpad" android:src="@drawable/ic_new_camera" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OLT GEO COORDINATES"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_olt_lat" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="30.7334421" android:hint="OLT Latitude" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_olt_long" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="76.7797143" android:hint="OLT Longitude" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:paddingLeft="@dimen/smallpad" android:paddingRight="@dimen/smallpad" android:paddingBottom="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OLT INSTALLATION ADDRESS"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_adressline1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="30.7334421" android:hint="Address1" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_adressline2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="76.7797143" android:hint="Address2" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_adressline3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CHANDIGARH" android:hint="District" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_adressline4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PUNJAB" android:hint="State" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_adressline5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="160030" android:hint="Pincode" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:padding="@dimen/smallpad" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_adressline6" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CHDSSV" android:hint="Exchange Code" android:maxLines="1" android:inputType="textPersonName" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smallpad" android:weightSum="2">
+            <TextView android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/txt_cancel" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="CANCEL" android:layout_weight="1"/>
+            <TextView android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="center" android:id="@+id/txt_submit" android:background="@drawable/style17" android:padding="@dimen/mediumpad" android:layout_width="0sp" android:layout_height="match_parent" android:text="SUBMIT" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

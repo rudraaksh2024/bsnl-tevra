@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/new_style" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad" android:weightSum="3">
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:layout_gravity="center" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="CIRCLE" android:layout_weight="1"/>
+                <Spinner android:id="@+id/sp_circle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:layout_gravity="center" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="OA" android:layout_weight="1"/>
+                <Spinner android:id="@+id/sp_ssa" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                <TextView android:textSize="@dimen/mediumtext" android:textColor="@color/colorblack" android:gravity="center_vertical" android:padding="@dimen/smallpad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="EXCHANGE" android:layout_weight="1"/>
+                <Spinner android:id="@+id/sp_nms_exchangecode" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:gravity="center" android:layout_gravity="right" android:id="@+id/btn_nms_dslam" android:background="@drawable/button" android:padding="@dimen/mediumpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/smallpad" android:text="SUBMIT"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lay_nms_dslam" android:background="@drawable/new_style" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mediumpad">
+            <TextView android:textSize="@dimen/mediumtext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/txt_nms_header" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ScrollView android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <bsnl.bsnl_teevra.HorizontalScrollViewForViewPager android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TableLayout android:id="@+id/tbl_nms_dslam" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </bsnl.bsnl_teevra.HorizontalScrollViewForViewPager>
+            </ScrollView>
+            <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NOTE: Nodal Can Add Location\10(ADMIN -&gt; INVENTORIES -&gt; EDIT)"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

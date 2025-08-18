@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:layout_weight="1" app:cardCornerRadius="16dp" app:cardElevation="4dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="IN-TRAFFIC"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.ekn.gruzer.gaugelibrary.ArcGauge android:id="@+id/gauge_in" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                    <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/tv_in" android:paddingBottom="@dimen/bigpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bigpad" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:padding="@dimen/xsmallpad" android:layout_width="0sp" android:layout_height="match_parent" android:layout_margin="@dimen/smallpad" android:layout_weight="1" app:cardCornerRadius="16dp" app:cardElevation="4dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorRed" android:gravity="center" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OUT-TRAFFIC"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.ekn.gruzer.gaugelibrary.ArcGauge android:id="@+id/gauge_out" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/smalltext" android:textStyle="bold" android:textColor="@color/colorblack" android:gravity="center" android:id="@+id/tv_out" android:paddingBottom="@dimen/bigpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bigpad" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

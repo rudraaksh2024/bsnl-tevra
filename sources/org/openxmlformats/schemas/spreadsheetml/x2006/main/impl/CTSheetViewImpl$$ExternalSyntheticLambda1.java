@@ -1,0 +1,17 @@
+package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
+
+import java.util.function.BiConsumer;
+import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSelection;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class CTSheetViewImpl$$ExternalSyntheticLambda1 implements BiConsumer {
+    public final /* synthetic */ CTSheetViewImpl f$0;
+
+    public /* synthetic */ CTSheetViewImpl$$ExternalSyntheticLambda1(CTSheetViewImpl cTSheetViewImpl) {
+        this.f$0 = cTSheetViewImpl;
+    }
+
+    public final void accept(Object obj, Object obj2) {
+        this.f$0.setSelectionArray(((Integer) obj).intValue(), (CTSelection) obj2);
+    }
+}

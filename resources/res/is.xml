@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/back_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bigtext" android:textStyle="bold" android:textColor="@color/colorwhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BULK TR069 CONFIG"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/smalltext" android:textColor="@color/colorblack" android:textColorHint="@color/Grey" android:id="@+id/et_search" android:background="@drawable/new_style_search" android:padding="@dimen/smallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mediumpad" android:layout_marginRight="@dimen/mediumpad" android:hint="SEARCH KEYWORD" android:maxLines="1" android:drawableLeft="@drawable/ic_new_search"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btnLay" android:paddingLeft="@dimen/xsmallpad" android:paddingTop="@dimen/xsmallpad" android:paddingRight="@dimen/xsmallpad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallpad">
+            <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/prev" android:background="@drawable/button01" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/smallpad" android:layout_marginRight="@dimen/smallpad" android:text="PREV"/>
+            <HorizontalScrollView android:id="@+id/horizontalScrollView" android:layout_width="0sp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lay_btn" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </HorizontalScrollView>
+            <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/next" android:background="@drawable/button01" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/smallpad" android:layout_marginRight="@dimen/smallpad" android:text="NEXT"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/smalltext" android:textColor="@color/colorwhite" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="0sp" android:layout_marginTop="@dimen/smallpad" android:layout_marginBottom="@dimen/mediumpad" android:divider="@color/colorwhite" android:dividerHeight="@dimen/smallpad" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

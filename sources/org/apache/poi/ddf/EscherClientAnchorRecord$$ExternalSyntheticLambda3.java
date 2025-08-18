@@ -1,0 +1,16 @@
+package org.apache.poi.ddf;
+
+import java.util.function.Supplier;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class EscherClientAnchorRecord$$ExternalSyntheticLambda3 implements Supplier {
+    public final /* synthetic */ EscherClientAnchorRecord f$0;
+
+    public /* synthetic */ EscherClientAnchorRecord$$ExternalSyntheticLambda3(EscherClientAnchorRecord escherClientAnchorRecord) {
+        this.f$0 = escherClientAnchorRecord;
+    }
+
+    public final Object get() {
+        return Short.valueOf(this.f$0.getRow1());
+    }
+}
